@@ -1,0 +1,713 @@
+div{
+    background-color: #eee ;
+}
+.assign-1 div{
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+background-color: blueviolet;
+margin-top: 10px;
+}
+.assign-1 .assign-1-shape-2{
+
+    background-color: rgb(138 43 226 /.5);
+}
+.assign-1 .assign-1-shape-3{
+
+    background-color: rgb(138 43 226 /.1);
+
+}
+/************************************************************************************************************************/
+
+.assign-2 div{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    }
+
+.assign-2 .assign-2-shape-2{
+    background-repeat: repeat-x;
+}
+.assign-2 .assign-2-shape-3{
+    background-repeat: repeat-y;
+}
+.assign-2 .assign-2-shape-4{
+    background-repeat: repeat;
+}
+/************************************************************************************************************************/
+
+.assign-3 div{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    }
+
+.assign-3 .assign-3-shape-2{
+    background-repeat: repeat-x;
+    background-position: 100% 100%;
+}
+.assign-3 .assign-3-shape-3{
+    background-repeat: repeat-y;
+    background-position: 100% 100%;
+}
+.assign-3 .assign-3-shape-4{
+    background-repeat: repeat;
+}
+/************************************************************************************************************************/
+.assign-4 div{
+    width: 400px;
+    height: 400px;
+    background-size: 80% 80%;
+    margin-left: auto;   
+    margin-right: auto;
+    background-image: url(../img/css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    }
+    .assign-4 .assign-4-shape-1{
+        background-size: 80% 80%;
+    }
+    .assign-4 .assign-4-shape-2{
+        background-repeat: repeat-y;
+        background-position: top right;
+        background-size: 80% 80%;
+    }
+    .assign-4 .assign-4-shape-3{
+        background-repeat: repeat-x;
+        background-size: 80% 80% ;
+        background-position: bottom;
+    }
+    .assign-4 .assign-4-shape-4{
+        background-size: 50% 50%;
+        background-position: 100% 100%;
+    }
+
+/************************************************************************************************************************/
+
+.assign-5 {
+    display: flex;
+    justify-content: center;
+}
+.assign-5 div{
+    border-width: 10px;
+    padding: 90px 120px ;
+    margin: 10px 30px;
+    outline: 10px solid black;
+    }
+.assign-5 .element-1{
+    border-color: red;
+    border-style: solid;
+}
+.assign-5 .element-2{
+    border-color: blue green;
+    border-style: solid;
+}
+.assign-5 .element-3{
+    border-color: red green blue yellow;
+    border-style: dashed;
+}
+/************************************************************************************************************************/
+
+.assign-6 .element-1{
+    padding:  20px;
+    width: 400px;
+    border-left: 10px solid red;
+    outline: 10px solid #eee;
+    margin-top: 20px;
+}
+.assign-6 .element-2{
+    /* display: none; */
+    visibility: hidden;
+    padding: 20px;
+    width: 400px;
+    border-left: 10px solid red;
+    outline: 10px solid #eee;
+    margin-top: 50px;
+}
+.assign-6 .element-3{
+    padding: 20px;
+    width: 400px;
+    border-left: 10px solid green;
+    outline: 10px solid #eee;
+    margin-top: 50px;
+}
+/************************************************************************************************************************/
+.assign-7{
+    margin-top: 50px;
+}
+.assign-7 div{
+    background-color: white ;
+}
+.assign-7 .parent .child .title{
+    color: red;
+}
+.assign-7 .parent .title{
+    color: blue;
+}
+.assign-7 .title,
+.assign-7 p{    
+    color: green;
+}
+/************************************************************************************************************************/
+.assign-8 div{
+    width: fit-content;
+    height: 50px;
+    font-size: 50px;
+    background-color: red;
+    color: black;
+
+}
+.assign-8 .four{
+    overflow: hidden;
+
+}
+/************************************************************************************************************************/
+.assign-9 p{
+    text-shadow: 2px 2px 1px red , 4px 4px 1px blue ,6px 6px 1px green;
+    text-transform: capitalize;
+    font-size: 80px;
+    text-align: center;
+
+}
+/************************************************************************************************************************/
+.assign-10{
+    font-size: 80px;
+    text-align: center;
+}
+.assign-10 .one{
+    text-transform: uppercase;
+}
+.assign-10 .two{
+    text-transform: capitalize;
+}
+.assign-10 .three{
+    text-transform: lowercase;
+}
+/************************************************************************************************************************/
+.assign-11{
+    width: 400px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.assign-11 .two{
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px 0px;
+    word-break: break-word;
+}
+.assign-11 .three{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+/************************************************************************************************************************/
+.assign-12{
+    text-align: center;
+    margin: 100px 50px ;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.assign-12 a{
+    background-color: green;
+    border-bottom: 5px solid rgb(1, 91, 1);
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 15px;
+}
+/************************************************************************************************************************/
+.assign-13 div{
+    width: 400px;
+    border: 5px solid red;
+    padding: 3rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.assign-13 p{
+    padding: inherit;
+    margin: inherit;
+    border: inherit;
+    background-color: inherit;
+
+}
+/************************************************************************************************************************/
+.assign-14 .one{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    font-family: open-sans;
+}
+.assign-14 .two{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    font-family: "Cairo", serif;
+}
+.assign-14 .three{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    font-family: "Jomhuria", serif;
+}
+/************************************************************************************************************************/
+html{
+    font-size: 20px;
+}
+.assign-15 .one{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: black;
+
+}
+.assign-15 .two{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+
+}
+.assign-15 .three{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: black;
+
+}
+/************************************************************************************************************************/
+.assign-16{
+    overflow: hidden;
+    background-color: #eee;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.assign-16 .first{
+    float: left;
+    width: calc(100% - 2%);
+    margin: 1%;
+    background-color: #eff;
+}
+.assign-16 .second{
+    float: left;
+    width: calc((100% - (15px*4)) / 3);
+    margin-left: 15px;
+    background-color: #eff;
+    margin-bottom: 15px;
+}
+.assign-16 .third{
+    float: left;
+    width: calc((100% - (15px*3)) / 2);
+    margin-left: 15px;
+    background-color: #eff;
+    margin-bottom: 15px;
+}
+.assign-16 .fourth{
+    float: left;
+    width: calc((100% - (15px*5)) / 4);
+    margin-left: 15px;
+    background-color: #eff;
+    margin-bottom: 15px;
+}
+.clear{
+    clear: both;
+}
+/************************************************************************************************************************/
+.assign-17 div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    background-color:#eee; /* Get The Background From Image */
+    color: black;
+}
+.assign-17 .one {
+    
+    background-color: #eeeeee7e;
+}
+.assign-17 .two {
+    opacity: .2;
+}
+/************************************************************************************************************************/
+.assign-18 div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.assign-18{
+    position: relative;
+    height: 200px;
+}
+.assign-18 .black{
+    background-color: black;
+    left: 20px;
+    top: 40px;
+    z-index: 0;
+}
+.assign-18 .green{
+    background-color: green;
+    left: 40px;
+    top: 40px;
+    z-index: 2;
+}
+.assign-18 .red{
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+}
+.assign-18 .blue{
+    background-color: red;
+    left: 60px;
+    top: 60px;
+    z-index: 3;
+}
+/************************************************************************************************************************/
+.assign-19 div{
+    width: 400px;
+    position: relative;
+    padding: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-top: 3px solid red ;
+    border-bottom:3px solid red ;
+    border-left:3px solid blue;
+    border-right:3px solid blue;
+    z-index: 1;
+}
+.assign-19 div span{
+    z-index: 2;
+    position: absolute;
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+}
+.assign-19 .top-left{
+    top: -25px;
+    left: -25px;
+    border-right: 3px solid red;
+}
+.assign-19 .top-right{
+    top: -25px;
+    right: -25px;
+    border-left: 3px solid red;
+}
+.assign-19 .bottom-left{
+    bottom: -25px;
+    left: -25px;
+    border-right: 3px solid red;
+}
+.assign-19 .bottom-right{
+    bottom: -25px;
+    right: -25px;
+    border-left: 3px solid red;
+}
+/************************************************************************************************************************/
+.assign-20 .outer{
+    width: 400px;
+    margin: 100px auto;
+    list-style: none;
+    font-family: sans-serif;
+}
+.assign-20 .outer .inner{
+    margin-top: 15px;
+    background-color: #eee;
+    padding: 15px;
+}
+.assign-20 .w{
+    background-color: white;
+    padding: 5px 10px;
+    margin-top: 5px;
+}
+.assign-20 .inner ul{
+    list-style-position: inside;
+    padding: 0px;
+
+}
+/************************************************************************************************************************/
+
+table{
+    width: 700px;
+    margin: 50px auto;
+
+}
+th{
+    background-color: #606060;
+    padding: 10px;
+    color: white;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+}
+th {
+    background-color: #333;
+    color: white;
+}
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.btn {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.view-btn {
+    background-color: blue;
+}
+.delete-btn {
+    background-color: red;
+}
+/************************************************************************************************************************/
+.assign-22 div{
+    width: 700px;
+    padding: 30px 0px;
+    margin: 50px auto;
+    background-color: #eee;
+    text-align: center;
+    
+}
+.assign-22 div:empty{
+    background-color: red;
+    height: 80px ;
+    padding: 0px;
+
+    
+}
+/************************************************************************************************************************/
+
+.assign-23 div{
+    width: 400px;
+    padding: 15px 5px;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    
+}
+/* .assign-23 div::first-letter{
+    padding: 5px 0px;
+    width: 20px;
+    left: -10px;
+    position: absolute;
+    display: block;
+    background: red;
+    color: white;
+    
+} */
+.assign-23 div::before{
+    content: "1";
+    padding: 5px 0px;
+    width: 20px;
+    left: -10px;
+    top: 50%;
+    color: white;
+    margin-top: -15px;
+    background: rgb(247, 62, 62);
+    position: absolute;
+}
+/************************************************************************************************************************/
+.assign-24 p[data-person]{
+    width: 400px;
+    background-color: #eee;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    border-left: 5px solid red;
+    margin: 50px auto;
+    position: relative;
+}
+.assign-24 p[data-person]::before {
+    content: attr(data-person);
+    padding: 7px 03px;
+    background-color: #e6e4e4;
+    position: absolute;
+    left: -94px;
+    top: 4px;
+    width: 66px;
+}
+.assign-24 p[data-person]::after {
+    content: "";
+    background-color: #e6e4e4;
+    position: absolute;
+    left: -17px;
+    top: 15px;
+    width: 0px;
+    height: 0;
+    border-color: white red white white;
+    border-style: solid;
+    border-width: 7px;
+}
+/************************************************************************************************************************/
+.assign-25 p{
+    width: 400px;
+    background-color: #eee;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    border-right: 5px solid red;
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    counter-increment: counter-elemnet;
+}
+.assign-25 p::before {
+    content: counter(counter-elemnet);
+    background-color: red;
+    position: absolute;
+    font-size: 20px;
+    padding: 12px 0px;
+    left: -30px;
+    top: 0px;
+    width: 40px;
+    height: 19px;
+    color: white;
+}
+/************************************************************************************************************************/
+.assign-26 div{
+    content: "element";
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 50px 0px;
+    border-radius: 50px;
+    margin-left: calc((100% - 300px) / 4); ;
+    box-shadow: 5px 5px 0px 0px blue ,-5px -5px 0px 0px red;
+    border: 3px solid black;
+    counter-increment: counter-elemnet;
+    position: relative;
+    text-align: center;
+}
+.assign-26 div::before{
+    content: counter(counter-elemnet);
+    background-color: black;
+    position: absolute;
+    font-size: 20px;
+    left: 40px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.assign-26 div::after{
+    content: "Element";
+    position: absolute;
+    font-size: 20px;
+    left: 19px;
+    top: 37px;
+    border-radius: 10px;
+}
+/************************************************************************************************************************/
+.assign-27 div{
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: inset 0px 1px 13px 2px black;
+    border-top-left-radius: 12px 28px;
+    border-bottom-right-radius: 12px 28px;
+    
+}
+/************************************************************************************************************************/
+.assign-28{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto; 
+    width: 80%;
+    height: 300px;
+    text-align: center;
+}
+.assign-28 .side{
+    width: 300px;
+    position: relative;
+}
+.assign-28 .middle{
+    width: 0%;
+    border: 1px solid #03a9f4;
+    height: 100%;
+    background-color: white;
+    margin: 0px 30px;
+    position: relative;
+    
+}
+.assign-28 .top{
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #03a9f4;
+    border-radius: 15px 15px 15px 15px;
+}
+.assign-28 .bottom-R,
+.assign-28 .bottom-L{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    color: black;
+    background-color: #c4c2c2;
+    border-radius: 100px;
+}
+.assign-28 .bottom-L::after{
+    content: "$30";
+    position: absolute;
+    font-size: 59px;
+    left: 110px;
+    top: 132px;
+}
+.assign-28 .bottom-R::after{
+    content: "Free";
+    position: absolute;
+    font-size: 59px;
+    left: 95px;
+    top: 123px;
+}
+.assign-28 .middle::after{
+    content: "or";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    left: -15px;
+    top: 132px;
+    background-color: #03a9f4;
+    color: white;
+}
