@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.EL{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: #eee;
+    padding: 30px;
+}
+.L{
+    width: 30%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    
+}
+.E{
+    width: 30%;
+    height: 100%;
+    background-color: #eee;
+    position: relative;
+    
+}
+span{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+}
+.left-E,
+.left-L{
+    width: 100px;
+    height: 100%;
+}
+.bot-L,
+.bot-E{
+    width: 100%;
+    height: 100px;
+    bottom: 0px;
+}
+.top-E{
+    width: 100%;
+    height: 100px;
+    top: 0px;
+}
+.mid-E{
+    width: 100%;
+    height: 100px;
+    top: 50%;
+    transform: translate(0px,-50%);
+}
+.cube-L{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: move-L; 
+    animation-fill-mode: backwards;
+    opacity: 0;
+    animation-delay: 0s;
+
+}
+.cube-E{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: move-E; 
+    animation-delay: 5s;
+}
+
+@keyframes move-L {
+    0%{
+        opacity: 1;
+        transform: translate(0px, 0rem);
+    }
+    30%{
+        transform: translate(0px, 545px);
+    }
+    45%{
+        transform:translate(340px,545px) ;
+    
+    }
+    50%{
+        opacity: 1;
+    }
+    80%{
+        opacity: .5;
+    }
+    85%{
+        opacity: .0;
+    }
+    90%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        transform:translate(340px,545px) ;
+    }
+}
+@keyframes move-E {
+    0%{
+        transform: translate(0rem, 0rem);
+    }
+    10%{
+        transform: translate(-340px, 0px);
+    
+    }
+    15%{
+        transform:translate(-340px, 275px);
+    }
+    20%{
+        transform:translate(0px, 275px);
+    }
+    25%{
+        transform:translate(-340px, 275px);
+    }
+    30%{
+        transform: translate(-340px, 545px);
+
+    }
+    35%{
+        transform: translate(0px, 545px);
+    }
+    50%{
+        transform: translate(-340px, 545px);
+    }
+    70%{
+        transform: translate(-340px, 0px);
+    }
+    100%{
+        transform: translate(0rem, 0rem);
+    }
+}
