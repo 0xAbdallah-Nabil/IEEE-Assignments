@@ -1,0 +1,57 @@
+.assign-1 .parent{
+    width: 500px;
+    height: 250px;
+    margin: 50px auto 0px auto;
+    background-color: #eee;
+    transition: all 0.5s;
+}
+.assign-1{
+    height: 300px;
+}
+.assign-1 .child{
+    width: 400px;
+    height: 100px;
+    margin: 50px auto 0px auto;
+    background-color: #a2a2a2;
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+}
+.assign-1 .parent:hover{
+    margin: 0px auto;
+}
+.assign-1 .parent:hover .child {
+    margin-top: 0px;
+}
+/******************************************************/
+.assign-2 div{
+    width: 400px;
+    background-color: #eee !important;
+    margin: 50px auto;
+    color: transparent !important;
+    padding: 20px;
+    text-align: center;
+    border: 0px solid blue !important;
+    font-size: 20px !important;
+    position: relative;
+}
+.assign-2 div::before{
+    content: "ELZERO";
+    position: absolute;
+    left: 180px;
+    top: 19px;
+    color: black;
+
+}
+/******************************************************/
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+.assign-3 div {
+border: 2px solid var(--mainColor ,red);
+color: var(--mainColor ,black);
+padding: var(--mainPadding);
+margin: 10px auto 0px auto;
+width: 400px;
+}
+/******************************************************/

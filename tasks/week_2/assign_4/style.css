@@ -1,0 +1,174 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.assign-1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-rows: 10% auto;
+    margin: 50px auto;
+    counter-reset: grid-item ;
+}
+.assign-1 .grid div{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.assign-1 .grid div:before{
+    counter-increment: grid-item;
+    content: "Element " counter(grid-item);
+}
+/*******************************************************************************/
+.assign-2 .layout{
+    height: 100vh;
+    display: grid;
+    background-color: #ddd;
+    margin: 50px auto;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 1fr 8fr 1fr; 
+    grid-template-areas:"head head head head head head head head head head"
+                        "sec sec sec sec sec sec sec side side side"
+                        "foot foot foot foot foot foot foot foot foot foot";
+}
+.assign-2 header{
+    grid-area: head;
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.assign-2 header::before{
+    content: "Header";
+    color: white;
+    margin-left: 10px;
+}
+.assign-2 section{
+    grid-area: sec;
+    background-color: green;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.assign-2 section::before{
+    content: "Section";
+    color: white;
+}
+.assign-2 aside{
+    grid-area: side;
+    background-color: orange;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.assign-2 aside::before{
+    content: "Aside";
+    color: white;
+}
+.assign-2 footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: foot;
+    background-color: gray;
+}
+.assign-2 footer::before{
+    content: "Footer";
+    color: white;
+    margin-left: 10px;
+}
+/*******************************************************************************/
+.assign-3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto 4fr 4fr auto;
+    grid-template-rows: 9fr auto;
+    gap: 20px;
+}
+.assign-3 .grid div{
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+/*************************************************************************************/
+.assign-4 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    grid-template-rows: repeat(6 ,1fr);
+    gap: 20px ;
+}
+.assign-4 .grid div{
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.assign-4 .one{
+    grid-column: span 5;
+}
+.assign-4 .two{
+    grid-column: span 3;
+}
+.assign-4 .three{
+    grid-column: span 2;
+}
+.assign-4 .four{
+    grid-column: span 2;
+}
+.assign-4 .five{
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.assign-4 .six{
+    grid-column: span 2;
+}
+.assign-4 .seven{
+    grid-column: span 2;
+}
+.assign-4 .eight{
+    grid-column: span 5;
+}
+/*****************************************************************/
+.assign-5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content:space-between ;
+}
+.assign-5 .grid div{
+    background: magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*****************************************************************/

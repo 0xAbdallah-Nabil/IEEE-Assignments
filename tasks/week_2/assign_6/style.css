@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --main-color: rgb(255, 128, 0);
+    --second-color: green;
+    --wh:142px;
+}
+.assign-1 > h1{
+    background-color: var(--main-color);
+    color: white;
+    width: 150px;
+    height: 80px;
+    margin: 50px auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    position: relative;
+}
+.assign-1 > h1::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transform: skew(-15deg) rotate(-5deg);
+}
+.assign-1 > h1::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transform: skew(15deg) rotate(5deg);
+}
+/**********************************************************/
+.assign-2 > h1{
+    background-color: var(--second-color);
+    color: white;
+    width: 145px;
+    height: 80px;
+    margin: 50px auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    position: relative;
+
+}
+.assign-2 > h1::before{
+    content: "";
+    position: absolute;
+    left: -12px;
+    bottom: 0px;
+    width: 11%;
+    height: 100%;
+    border-right: 7px solid white;
+    background-color: var(--second-color);
+    transform: skew(15deg) ;
+}
+/**********************************************************/
+/*
+.class {
+    transform: matrix(3, 0.2679, 0, 3, 20, 100);
+    trasnfrom: translatex(20px) trasnlatey(100px) scalex(3) scaley(3) skewy(15deg) skewx(0);
+}
+*/
+/**********************************************************/
+.assign-3 > div{
+    background-color: rgb(72, 120, 82);
+    color: white;
+    width: 200px;
+    height: 170px;
+    margin: 200px auto;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: flex-end;
+    position: relative;
+    border-bottom: 5px solid black;
+}
+.assign-3 > div::after{
+    box-sizing: border-box;
+    content: "";
+    background-color: black;
+    border: 5px solid white;
+    width: var(--wh);
+    height: var(--wh);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 0px;
+}
+.assign-3 > div::before{
+    content: "Elzero";
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+}
+/**********************************************************/
+.assign-4{
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+.assign-4 div{
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.assign-4 div::before,
+.assign-4 div::after{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.assign-4 div::before{
+    content: "Front";
+    background-color: blue;
+}
+.assign-4 div::after{
+    content: "Back";
+    background-color: red;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.assign-4 div:hover{
+    transform: rotateY(180deg);
+}
+/**********************************************************/
+.assign-5{
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+.assign-5 div{
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.assign-5 div::before,
+.assign-5 div::after{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.assign-5 div::before{
+    content: "Front";
+    background-color: blue;
+}
+.assign-5 div::after{
+    content: "Back";
+    background-color: red;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
+.assign-5 div:hover{
+    transform: rotateX(180deg);
+}

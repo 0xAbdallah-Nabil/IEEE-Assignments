@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    color: black;
+}
+a:visited {
+    color: black; /* Color when the link is clicked */
+}
+a:hover {
+    color: red; /* Color when the link is hovered */
+}
+.copy{
+    text-align: right;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}

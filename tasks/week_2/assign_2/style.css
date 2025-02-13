@@ -1,0 +1,283 @@
+.section-1 div{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin: 50px auto;
+    color: rgb(251, 66, 4);
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section-1 div:after{
+    width: 100px;
+    height: 100px;
+    content: "";
+    background-color: rgb(251, 66, 4);
+    margin: 0px auto;;
+    border-radius: 50px;
+    position: absolute;
+    left: 5px;
+    top:0px;
+    z-index: -1;
+}
+.section-1 div:before{
+    width: 100px;
+    height: 100px;
+    content: "";
+    background-color: skyblue;
+    margin: 0px auto;;
+    border-radius: 50px;
+    position: absolute;
+    left: -5px;
+    top:0px;
+    z-index: -1;
+}
+/************************************************/
+.section-2 .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    padding: 1%;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #eee;
+}
+.section-2 .parent div{
+    width: calc(96% / 3);
+    background-color: rgb(251, 66, 4);
+    padding: 10px 0px;
+    color: white;
+}
+/************************************************/
+.section-3 .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    padding: 1%;
+    justify-content: space-between;
+    flex-direction:row-reverse;
+    flex-wrap:wrap-reverse;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #eee;
+}
+.section-3 .parent div{
+    width: calc(96% / 3);
+    background-color: rgb(102, 102, 102);
+    padding: 10px 0px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.section-3 .one{
+    order: 1;
+    align-self: flex-start;
+}
+.section-3 .two{
+    order: 2;
+}
+.section-3 .three{
+    align-self: flex-end;
+    order: 5;
+}
+.section-3 .four{
+    order: 4;
+}
+.section-3 .five{
+    order: 3;
+}
+.section-3 .six{
+    order: 6;
+}
+/************************************************/
+
+.section-4 .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    padding: 1%;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction:column;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #eee;
+}
+.section-4 .parent .two{
+    flex-basis: calc(96% / 3);
+    width: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-start;
+}
+.section-4 .parent .three,
+.section-4 .parent .one{
+    flex-basis: calc(96% / 3);
+    width: 5%;
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-end;
+}
+/************************************************/
+
+.section-5 .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    padding: 1%;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+.section-5 .parent .four{
+    width: calc(60% / 4);
+    height: 50%;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-end;
+    order: 1;
+}
+.section-5 .parent .two{
+    width: calc(60% / 4);
+    height: 50%;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-end;
+    background-color: skyblue;
+    order: 3;
+}
+.section-5 .parent .three{
+    width: calc(60% / 4);
+    height: 50%;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-start;
+    background-color: orange;
+    order: 4;
+}
+.section-5 .parent .one{
+    width: calc(60% / 4);
+    height: 50%;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: flex-start;
+    background-color: brown;
+    order: 2;
+
+}
+/************************************************/
+.page{
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #eee;
+    box-sizing: border-box;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.main-area,
+.footer,
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 10px 0px 10px;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(211, 206, 206);
+    height: 30px;
+    margin: 0px;
+    margin-left: 10px;
+    flex-grow: 1;
+
+}
+li{
+    box-sizing: border-box;
+    padding: 5px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(211, 206, 206);
+    height: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+.sidebar{
+    height: 200px;
+    background-color: rgb(211, 206, 206);
+    width: calc(50% - 5px);
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.content{
+    height: 200px;
+    background-color: rgb(211, 206, 206);
+    width: calc(50% - 5px);
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.design{
+    height: 30px;
+    background-color: rgb(211, 206, 206);
+    width: calc(50%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.copyright{
+    height: 30px;
+    background-color: rgb(211, 206, 206);
+    width: calc(50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+}

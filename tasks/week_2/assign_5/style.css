@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.assign-1 div{
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: blue;
+    
+}
+.assign-1 div::after{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(-5deg);
+    position:absolute;
+    z-index: -1;
+}
+.assign-1 div::before{
+    content: "";
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    transform: rotate(5deg);
+    position:absolute;
+    z-index: -1;
+}
+/********************************************************/
+.assign-2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.assign-2 div{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #eee;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.assign-2 div::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    border: 5px solid red;
+    border-right: 5px solid white;
+    
+}
+.assign-2 div::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    border: 10px solid blue;
+    border-left: 10px solid white;
+    
+}
+/*********************************************************/
+.assign-3{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.assign-3 div{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #eee;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.assign-3 div::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    border: 5px solid red;
+    border-right: 5px solid white;
+    transition: .5s;
+    transition-delay:.5s ;
+}
+.assign-3 div::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    border: 10px solid blue;
+    border-left: 10px solid white;
+    transition: .5s;
+}
+.assign-3 div:hover::before,
+.assign-3 div:hover::after{
+    transform: rotate(360deg);
+}

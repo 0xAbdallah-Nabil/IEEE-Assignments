@@ -1,0 +1,31 @@
+.assign-1  div.main.red{
+    color: red;
+}
+/***************************/
+.assign-2 .parent div:nth-of-type(2){
+    color: red;
+}
+/***************************/
+.assign-3 .parent .baby:only-child{
+    color: red;
+}
+/***************************/
+.assign-4 p ~ div[title]:not(.no-need, .parent div){
+    color: red;
+}
+/***************************/
+.assign-5 div[title="Elzero"]:last-child:not(.no-need, .no-need div){
+    color: red;
+}
+/***************************/
+.assign-6 div:not(.no-need) div:nth-last-of-type(2){
+    color: red;
+}
+/***************************/
+.assign-7 div:first-child div:nth-child(5){
+    color: red;
+}
+/***************************/
+.assign-8 div :not(:first-child, h3, :last-child){
+    color: red;
+}
