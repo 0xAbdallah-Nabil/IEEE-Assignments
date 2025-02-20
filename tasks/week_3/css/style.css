@@ -25,21 +25,22 @@ body {
 
 @media (min-width: 768px) {
 .container {
-    width: 750px;
+    width: 95%;
 }
 }
 /* Medium */
 @media (min-width: 992px) {
 .container {
-    width: 970px;
+    width: 95%;
 }
 }
 /* Large */
 @media (min-width: 1200px) {
 .container {
-    width: 1170px;
+    width: 95%;
 }
 }
+
     /* start header **************************************_ S _********************************/
 header .container{
     display: flex;
@@ -518,3 +519,41 @@ footer h1 span{
     color: var(--main-color);
 }
     /* end footer  section ***************************************_ E _********************************/
+    /* fix media of the text in the sm size */
+@media (max-width: 768px) {
+    .contact .title h1 {
+        font-size:70px;
+        
+    }
+    .contact .container > h1 {
+        font-size: 15px;
+    }
+    .contact .link {
+        font-size: 15px;
+    }
+    .social{
+        font-size: 14px;
+    }
+    .about .title h1 {
+        font-size: 70px;
+    }
+    .Portfolio .title h1 {
+        font-size: 60px;
+    }
+    .Portfolio .title p {
+        margin-top: -15px;
+        font-size: 15px;
+    }
+    .Services .title h1 {
+        font-size: 60px;
+    }
+    .Services .title p {
+        margin-top: -15px;
+        font-size: 15px;
+    }
+    footer h1{
+        margin: 0px;
+        font-size: 15px;
+        color: white;
+    }
+}
