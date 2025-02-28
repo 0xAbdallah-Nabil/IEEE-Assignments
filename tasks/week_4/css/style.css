@@ -1,0 +1,916 @@
+:root {
+--main-color: black;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+.container{
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+@media (min-width: 768px) {
+.container {
+    width: 95%;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.container {
+    width: 95%;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+    width: 80%;
+}
+}
+/* start landing section ****************************************_ S _******************************** */
+.landing{
+    background-image: url(../img/landing.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.landing::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    background-color: transparent;
+    transform: rotate(45deg) translate(-50%, 0%);
+    cursor: pointer;
+    z-index: 5;
+}
+.landing::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    background-color: transparent;
+    transform: rotate(45deg) translate(-50%, 0%);
+    cursor: pointer;
+    z-index: 5;
+}
+.logo-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: relative;
+    z-index: 1;
+}
+.logo-part a:focus,
+.logo-part a:active {
+    outline: none;
+    border: none;
+}
+.logo-part ul{
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+.logo-part ul li{
+    padding: 30px 15px;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: 100;
+}
+.logo-part ul li:first-child{
+    border-bottom: 1px solid skyblue;
+    color: skyblue;
+}
+.logo-part ul li:hover{
+    border-bottom: 1px solid skyblue;
+    color: skyblue;
+}
+.logo-part ul i{
+    border-left: 1px solid white; 
+    margin: 10px 0px;
+    padding: 0px 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.circles-part{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+.circles-part span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.circles-part span:hover{
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}
+.content-part{
+    min-height: 50%;
+    position: absolute;
+    z-index: 1;
+    max-width: 50%;
+    background-color: rgba(4, 85, 118, 0.726);
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-part h2{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.content-part p{
+    width: 100%;
+    margin: 0px;
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+.text{
+    padding: 30px;
+}
+/* end landing section ****************************************_ S _******************************** */
+/* start Services section ****************************************_ S _******************************** */
+.Services{
+    padding: 20px;
+}
+.Services p{
+    color: gray;
+    font-size: 1rem;
+}
+.Services .title{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Services .title h1{
+    width: 40%;
+    position: relative;
+    padding: 30px;
+    font-weight: 100;
+    font-size:3rem;
+}
+.Services .title p{
+    width: 540px;
+}
+.title h1::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 1.5px;
+    background: black;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.title h1::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    border: 1.5px solid black;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 5px);
+    z-index: 1;
+}
+.Services .content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.Services .content .cardd{
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    margin: 30px 0px;
+}
+.Services .content .cardd .card-content{
+    width: 90%;
+    padding: 0px 10px;
+    margin-left: 30px;
+}
+.Services .content .cardd .card-content h2{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(25 200 250);
+}
+.Services .content .cardd .card-content p{
+    line-height: 2rem;
+}
+ /* end Services section ****************************************_ E _******************************** */
+/* start design section ****************************************_ S _******************************** */
+.design{
+    background-image: url(../img/design-features.jpg);
+    background-size: cover;
+    height: 85vh;
+    background-color: black;
+    position: relative;
+}
+.feature{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.design .img{
+    background-image: url(../img/mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    z-index: 5; 
+    bottom: -90px;
+    left: 160px;
+}
+.design .text{
+    background-color: rgba(4, 85, 118, 0.726);
+    color: white;
+    position: absolute;
+    z-index: 5;
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    right: 0px;
+    transform: translate(0%, -50%);
+}
+.design .text h2{
+    margin: 40px 0px;
+}
+.design .text li{
+    list-style: none;
+    margin: 30px 0px;
+}
+.design .text li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+/* end design section ****************************************_ E _******************************** */
+/* start portfolio section ****************************************_ S _******************************** */
+
+.portfolio p{
+    color: gray;
+    font-size: 1rem;
+}
+.portfolio .title ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 50px 0px;
+}
+.portfolio .title ul li{
+    padding:10px;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+}
+.portfolio .title ul li:hover{
+    padding:10px;
+    color: white;
+    background-color: rgb(25 200 250);
+}
+.portfolio .title{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio .title h1{
+    width: 40%;
+    position: relative;
+    font-weight: 100;
+    font-size:3rem;
+}
+.portfolio .title p{
+    width: 540px;
+    margin-bottom: 60px;
+}
+.portfolio .content{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+.portfolio .content .card{
+    padding: 0px;
+    margin: 0px;
+    width: 25%;
+    overflow: hidden;
+    transition: all 0.5s;
+    position: relative;
+}
+.portfolio .content .card img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.portfolio .content .card:hover img{
+    transform: rotate(5deg) scale(1.2);
+}
+.portfolio .content .card-content{
+    position: absolute;
+    left: 0;
+    padding: 0px 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.5s;
+    bottom: -100%;
+}
+.portfolio .content .card:hover .card-content{
+    bottom: 0px;
+}
+.portfolio .content .card:hover .card-content p{
+    color: rgb(25 200 250);
+}
+.portfolio .more{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(25 200 250);
+    color: white;
+    margin: 150px auto;
+    border: 0px;
+    padding-inline: 10px;
+    display: block;
+    cursor: pointer;
+}
+.portfolio .more:hover{
+    background-color: rgb(240, 10, 209);
+    color: white;
+}
+/* end portfolio section ****************************************_ E _******************************** */
+/* start video section ****************************************_ S _******************************** */
+.video{
+    text-align: center;
+    
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.video .text{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(25, 201, 250, 0.427);
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.video p{
+    color: white;
+}
+.video h1{
+    font-weight: 100;
+    font-size: 3rem;
+}
+.video video{
+    width: 100%;
+    
+}
+.video video::-webkit-media-controls{
+    display: none !important;
+    
+}
+.video button{
+    padding: 10px 20px;
+    background-color: rgb(25 200 250);
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+.video button:hover{
+    background-color: black;
+    color: white;
+
+}
+.video::before{
+    width: 100%;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.314);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+/* end video section ****************************************_ E _******************************** */
+/* start about section ****************************************_ S _******************************** */
+.about{
+    position: relative;
+}
+.about .title{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about .title h1{
+    width: 40%;
+    position: relative;
+    font-weight: 100;
+    font-size:3rem;
+}
+.about .title p{
+    width: 540px;
+    margin-bottom: 60px;
+}
+.about img{
+    margin-left: 50%;
+    transform: translate(-50%, 0px);
+}
+/* end about section ****************************************_ E _******************************** */
+/* start stats section ****************************************_ S _******************************** */
+.stats{
+    background-image: url(../img/stats.png);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+.stats::before{
+    width: 100%;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.stats .container{
+    display: flex;
+    position: relative;
+    z-index: 5;
+    padding: 80px 50px;
+
+}
+.stats .box{
+    width: 25%;
+    padding: 20px;
+    background-color: rgba(0, 106, 135, 0.54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.stats .container .box i{
+    color: white ;
+    background-color: black;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 20px ;
+}
+.stats .container .box .number{
+    font-size: 3rem;
+    margin: 20px 0px;
+    font-weight: 700;
+}
+/* end stats section ****************************************_ E _******************************** */
+/* start skills section ****************************************_ S _******************************** */
+.team .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+.team .testimonials{
+    width: 50%;
+    padding: 50px;
+}
+.team .skills{
+    width: 50%;
+    padding: 50px;
+
+}
+.team .testimonials > p,
+.team .skills > p{
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+
+}
+.team .testimonials > h3,
+.team .skills > h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+
+}
+.team .prog-part .prog{
+    width: 100%;
+    height: 30px;
+    background-color: #dedadc;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.team .prog-part .prog span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 30px;
+    background-color: rgb(25 200 250);
+    transition: 0.5s;
+}
+.team .prog-part .prog span::after{
+    content: attr(data-progress);
+    position: absolute;
+    top: -40px;
+    right: -15px; 
+    height: 30px;
+    width: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+}
+.team .prog-part .prog span::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    height: 0px;
+    width: 0px;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent; 
+    z-index: 5;
+}
+.team .prog-part h4{
+    font-weight: 400;
+    margin: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.team .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team .content .text{
+    position: relative;
+    border-bottom: 1px solid gray;
+    width: 70%;
+    font-size: 1.2rem;
+    padding: 40px 0px;
+}
+.team .content p{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 1rem;
+    color: gray;
+}
+.team .content  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.team .circles-part{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+.team .circles-part span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.team .circles-part span:hover{
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}
+/* end skills section ****************************************_ E _******************************** */
+/* Start center *****************************************_ S _******************************** */
+.center {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url("../img/quote.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 70px 0px;
+}
+.center::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+}
+.center .container{
+    position: relative;
+    
+}
+.center q{
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+}
+/* Start center *****************************************_ E _******************************** */
+/* Start Pricing ******************************************_ S _******************************** */
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    padding: 70px 0px;
+}
+.pricing .title{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.pricing .title h1{
+    width: 40%;
+    position: relative;
+    padding: 30px;
+    font-weight: 100;
+    font-size:3rem;
+}
+.pricing .title p{
+    width: 540px;
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+.pricing .plans .plan {
+    background-color: #fcfcfc;
+    text-align: center;
+}
+.pricing .plans .plan .head {
+    padding: 40px 20px;
+    border-top: 1px solid rgb(25 200 250);
+    border-bottom: 1px solid rgb(25 200 250);
+}
+.pricing .plans .plan .head h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+    font-size: 60px;
+    font-weight: bold;
+}
+.pricing .plans .plan .head span::before {
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    margin-right: 15px;
+    font-weight: normal;
+}
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    font-size: 20px;
+    position: relative;
+    right: -15px;
+}
+.pricing .plans .plan ul {
+    border-bottom: 1px solid rgb(25 200 250);
+    list-style: none;
+}
+.pricing .plans .plan ul li {
+    padding: 20px;
+    position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: rgb(25 200 250);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.pricing .plans .plan .foot a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    border: 1px solid rgb(25 200 250);
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.email .container input[type="submit"]:hover,
+.pricing .contact-link:hover,
+.pricing .plans .plan .foot a:hover {
+    background-color: rgb(255, 0, 178);
+    color: white;
+}
+.pricing .contact-text {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+.pricing .contact-link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: rgb(25 200 250);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+  /* End Pricing ******************************************_ E _******************************** */
+  /* Start email ******************************************_ S _******************************** */
+.email {
+    padding: 70px 0px;
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+.email::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.email .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(25, 201, 250, 0.515);
+}
+.email .container .text{
+    width: 50%;
+}
+.email .container .botton{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email .container input[type="email"] {
+    padding: 20px 30px;
+    border: 1px solid white;
+    background: none;
+    width: 80%;
+    caret-color: rgb(25 200 250);
+}
+.email .container i{
+    position: absolute;
+    left: 5px;
+}
+.email .container input[type="submit"] {
+    padding: 20px;
+    border: 1px solid white;
+    border-left: none;
+    background-color: rgb(25 200 250);
+    color: white;
+    cursor: pointer;
+    width: 20%;
+}
+  /* End email ******************************************_ E _******************************** */
+  /* Start footer ******************************************_ S _******************************** */
+.footer {
+    padding: 35px 0px;
+    
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.footer .container {
+    position: relative;
+}
+.footer img {
+    margin-bottom: 20px;
+}
+.footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.footer .social-icons i {
+    padding: 10px 15px;
+}
+.footer .social-icons i:hover{
+    color: rgb(255, 0, 178);
+}
+.footer .copyright {
+    margin-top: 60px;
+}
+.footer .copyright span {
+    font-weight: bold;
+    color: rgb(25 200 250);
+}
+/* End Footer *******************************************_ E _******************************** */
+.image{
+    background-image: url("../img/subscribe.jpg");
+    background-size: cover;
+}
