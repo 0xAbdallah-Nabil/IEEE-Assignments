@@ -20,6 +20,7 @@ body {
 }
 
 @media (min-width: 768px) {
+.container-small 
 .container {
     width: 95%;
 }
@@ -32,8 +33,17 @@ body {
 }
 /* Large */
 @media (min-width: 1200px) {
+.container-large,
 .container {
     width: 80%;
+}
+@media (max-width: 768px) {
+    .title p{
+        width: 100%;
+    }
+    .about img{
+        width: 100%;
+    }
 }
 }
 /* start landing section ****************************************_ S _******************************** */
@@ -189,6 +199,83 @@ body {
 .text{
     padding: 30px;
 }
+@media (max-width: 768px) {
+.container-large{
+    display: none;
+}
+.container-small{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    width: 80%;
+}
+.container-small .logo{
+    width: 70px;
+}
+.container-small .list{
+    position: absolute;
+    right: 15px;
+    top: 100%;
+    visibility: hidden;
+    padding: 0px;
+    z-index: 5;
+}
+.container-small .list::before{
+    content: "";
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--main-color) transparent;
+    position: absolute;
+    right: 10px;
+    top: -38px;
+}
+.container-small .list li{
+    list-style: none;
+    width: 200px;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.container-small .list-icon{
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.container-small .list-icon span{
+    border-bottom: 3px solid black;
+    width: 100%;
+    display: block;
+}
+.container-small .list-icon span:nth-last-child(2){
+    width: 50%;
+    transition: width var(--main-duration);
+}
+.container-small .list-icon span:nth-last-child(3){
+    border-bottom: 4px solid black;
+}
+
+.container-small .links:hover .list{
+    visibility: visible;
+}
+.container-small .links:hover span:nth-last-child(2){
+    width: 100%;
+}
+
+}
+@media (min-width: 769px) {
+    .container-small{
+        display: none;
+    }
+}
+
+
 /* end landing section ****************************************_ S _******************************** */
 /* start Services section ****************************************_ S _******************************** */
 .Services{
@@ -263,6 +350,15 @@ body {
 .Services .content .cardd .card-content p{
     line-height: 2rem;
 }
+@media (max-width: 768px) {
+
+}
+/* Medium */
+@media (max-width: 992px) {
+    .Services .content .cardd{
+        width: 100%;
+    }
+}
  /* end Services section ****************************************_ E _******************************** */
 /* start design section ****************************************_ S _******************************** */
 .design{
@@ -287,11 +383,11 @@ body {
     background-image: url(../img/mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 80%;
-    width: 30%;
+    height: 600px;
+    width: 400px;
     position: absolute;
     z-index: 5; 
-    bottom: -90px;
+    bottom: -120px;
     left: 160px;
 }
 .design .text{
@@ -319,6 +415,23 @@ body {
     margin-right: 20px;
     position: relative;
     top: 1px;
+}
+@media (max-width: 768px) {
+
+}
+/* Medium */
+@media (max-width: 992px) {
+    .design .img{
+        display: none;
+    }
+    .design .text{
+        background-color: rgba(4, 85, 118, 0.726);
+        color: white;
+        position: absolute;
+        z-index: 5;
+        width: 80%;
+
+    }
 }
 /* end design section ****************************************_ E _******************************** */
 /* start portfolio section ****************************************_ S _******************************** */
@@ -365,7 +478,7 @@ body {
 .portfolio .content{
     display: flex;
     flex-wrap: wrap;
-    height: 60vh;
+    min-height: 60vh;
 }
 .portfolio .content .card{
     padding: 0px;
@@ -377,6 +490,7 @@ body {
 }
 .portfolio .content .card img{
     width: 100%;
+    height: 100%;
     transition: all 0.5s;
 }
 .portfolio .content .card:hover img{
@@ -411,6 +525,17 @@ body {
 .portfolio .more:hover{
     background-color: rgb(240, 10, 209);
     color: white;
+}
+@media (max-width: 768px) {
+    .portfolio .content .card{
+        width: 100% !important;
+    }
+}
+/* Medium */
+@media (max-width: 992px) {
+    .portfolio .content .card{
+        width: 50%;
+    }
 }
 /* end portfolio section ****************************************_ E _******************************** */
 /* start video section ****************************************_ S _******************************** */
@@ -471,6 +596,7 @@ body {
 /* start about section ****************************************_ S _******************************** */
 .about{
     position: relative;
+    height: 70vh;
 }
 .about .title{
     text-align: center;
@@ -491,8 +617,11 @@ body {
     margin-bottom: 60px;
 }
 .about img{
-    margin-left: 50%;
-    transform: translate(-50%, 0px);
+    position: absolute;
+    bottom: -100px;
+    width: 700px;
+    margin-left: 35%;
+    transform: translate(-50%, 0%);
 }
 /* end about section ****************************************_ E _******************************** */
 /* start stats section ****************************************_ S _******************************** */
@@ -520,6 +649,7 @@ body {
     position: relative;
     z-index: 5;
     padding: 80px 50px;
+    flex-wrap: wrap;
 
 }
 .stats .box{
@@ -544,6 +674,19 @@ body {
     font-size: 3rem;
     margin: 20px 0px;
     font-weight: 700;
+}
+@media (max-width: 768px) {
+    .stats .box{
+        width: 100% !important;
+        
+    }
+}
+/* Medium */
+@media (max-width: 992px) {
+    .stats .box{
+        width: 50% ;
+        
+    }
 }
 /* end stats section ****************************************_ E _******************************** */
 /* start skills section ****************************************_ S _******************************** */
@@ -670,6 +813,16 @@ body {
     background-color: skyblue;
     border: 1px solid skyblue;
 }
+
+/* Medium */
+@media (max-width: 992px) {
+    .team .testimonials{
+        width: 100%;
+    }
+    .team .skills{
+        width: 100%;
+    }
+}
 /* end skills section ****************************************_ E _******************************** */
 /* Start center *****************************************_ S _******************************** */
 .center {
@@ -693,12 +846,21 @@ body {
 }
 .center .container{
     position: relative;
-    
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.center q{
+.center p{
     font-size: 30px;
     margin-bottom: 20px;
     display: block;
+    width: 100%;
+}
+.center span{
+    display: block;
+    margin: auto;
+    width: 100%;
 }
 /* Start center *****************************************_ E _******************************** */
 /* Start Pricing ******************************************_ S _******************************** */
