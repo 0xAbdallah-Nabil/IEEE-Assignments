@@ -37,14 +37,14 @@ body {
 .container {
     width: 80%;
 }
+}
 @media (max-width: 768px) {
     .title p{
-        width: 100%;
+        width: 100% !important;
     }
     .about img{
-        width: 100%;
+        width: 100%!important;
     }
-}
 }
 /* start landing section ****************************************_ S _******************************** */
 .landing{
