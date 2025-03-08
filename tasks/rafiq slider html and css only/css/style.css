@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+
+body, html{
+		width: 100%;
+		height: 100%;	
+		margin: 0;
+		font-family: 'Just Another Hand', cursive;
+		overflow-X: hidden;/* optional */
+	}
+
+#i1, #i2, #i3{ display: none;}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 38%;
+    user-select: none;
+    background-color: black;
+    background-size: cover;
+}
+.player{
+    height: 100%;
+    width: 100%;
+}
+.title{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title .text{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    margin: 0px 10px ;
+}
+.title span{
+    width: 90%;
+    height: 5px;
+    background-color: rgb(255, 162, 0);
+    display: block;
+    margin-left: 10px;
+}
+.container .slide_img{
+    position: absolute;
+    width: 100%;;
+    height: 100%;
+}
+
+.prev, .next{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: absolute;
+    top:50%; 
+    background-color: transparent;
+    color:rgba(255, 217, 0, 0.434);
+    z-index: 99;
+    transition: .45s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.next{right:0;}
+.prev{left:0;}
+
+label span {
+    position: absolute;
+    font-size: 67pt;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.prev:hover, .next:hover{
+    transition: .3s;
+    background-color: transparent;
+    color: gold; 
+}
+
+.container #nav_slide{
+	width: 100%;
+	bottom: -50px;
+	position: absolute;
+	z-index: 99;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#nav_slide .dots{
+	width: 40px;
+	height: 5px;
+	margin: 0 4px;
+	display: inline-block;
+	background-color: rgba(255, 217, 0, 0.378);
+	transition: .4s;
+}
+
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: gold;
+	transition: .25s
+}
+
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five 
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4,
+	#i5:checked  ~  #nav_slide #dot5
+	{ background-color: gold;}
+
+@keyframes scroll{
+	0%{	opacity:.4;}
+	100%{opacity:1;}
+}		
+
+/* .yt{
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	width: 150px;
+	height:50px;
+	border: outset #2c2c2c 4px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 30pt;
+	transition: .5s;
+}
+
+.yt a{
+	text-decoration: none;
+	color: #4c4c4c;
+	transition: .5s;
+}
+
+.yt:hover{
+	background: #4c4c4c;
+	transition: .3s;
+}
+
+.yt:hover a{
+	color: #fff;
+	transition: .3s;
+}
+ */
+/* @media screen and (max-width: 685px){
+	.container{
+		border: none;
+		width: 100%;
+		height: 0;
+		padding-bottom: 55%; 
+	}	
+	
+	label span { font-size: 50pt; }
+	
+	.prev, .next{
+		width: 15%;
+	}	
+	#nav_slide .dots{
+		width: 12px;
+		height: 12px;
+	}
+}
+@media screen  and(min-width: 970px){
+	.me{ display: none;}
+}
+ */
