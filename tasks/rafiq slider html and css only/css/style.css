@@ -20,7 +20,7 @@ body, html{
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 38%;
+    padding-bottom: 30%;
     user-select: none;
     background-color: black;
     background-size: cover;
@@ -28,12 +28,13 @@ body, html{
 .player{
     height: 100%;
     width: 100%;
+
 }
 .title{
-    height: 100px;
+    height: 10%;
     background-color: black;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 .title .text{
@@ -49,6 +50,7 @@ body, html{
     background-color: rgb(255, 162, 0);
     display: block;
     margin-left: 10px;
+	flex-grow: 1;
 }
 .container .slide_img{
     position: absolute;
@@ -56,7 +58,7 @@ body, html{
     height: 100%;
 }
 
-.prev, .next{
+/* .prev, .next{
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -69,49 +71,52 @@ body, html{
     cursor: pointer;
     text-align: center;
 }
-
-.next{right:0;}
+ */
+/* .next{right:0;}
 .prev{left:0;}
-
-label span {
+ */
+/* label span {
     position: absolute;
     font-size: 67pt;
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-}
+	display: none;
+} */
 
-.prev:hover, .next:hover{
+/* .prev:hover, .next:hover{
     transition: .3s;
     background-color: transparent;
     color: gold; 
 }
-
+ */
 .container #nav_slide{
 	width: 100%;
-	bottom: -50px;
+	bottom: 0px;
 	position: absolute;
 	z-index: 99;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
 }
 
 #nav_slide .dots{
 	width: 40px;
-	height: 5px;
+	height: 10px;
 	margin: 0 4px;
 	display: inline-block;
 	background-color: rgba(255, 217, 0, 0.378);
 	transition: .4s;
+	border-radius: 3px;
 }
 
 #nav_slide .dots:hover {
 	cursor: pointer;
 	background-color: gold;
-	transition: .25s
+	transition: .25s;
+	border: 1px solid black;
 }
 
 .slide_img{z-index: -1;}
@@ -128,7 +133,7 @@ label span {
 	#i3:checked  ~  #nav_slide #dot3,
 	#i4:checked  ~  #nav_slide #dot4,
 	#i5:checked  ~  #nav_slide #dot5
-	{ background-color: gold;}
+	{ background-color: gold;border: 2px solid black;}
 
 @keyframes scroll{
 	0%{	opacity:.4;}
@@ -143,8 +148,6 @@ body {
 	padding: 0;
 }
 .books{
-	height: 70vh;
-	margin-top: 50px;
 	margin-bottom: 500px;
 }
 .swiper {
@@ -160,7 +163,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-width: 276.8px !important;
+	
 }
 
 .swiper-wrapper img {
@@ -176,6 +179,7 @@ body {
 	color: white;
 	cursor: pointer;
 	font-size: 1rem;
+	margin: 10px 0px;
 }
 .btn:focus,
 .btn:hover{
@@ -186,22 +190,22 @@ body {
 	border: 1px solid black;
 }
 .books .title{
-    height: 100px;
+    height: 10%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 	background-color: white;
 	color: black;
 	position: relative;
 }
 .books .title .text{
-    font-size: 3rem;
+    font-size: 2rem;
+	width: 200px;
     text-align: center;
     font-weight: 800;
     margin: 0px 10px ;
 	color: black;
-	position: absolute;
-	right: 0px;
+	
 }
 .books .title span{
     width: 80%;
@@ -209,4 +213,24 @@ body {
     background-color: rgb(255, 162, 0);
     display: block;
     margin-left: 10px;
+	flex-grow: 1;
 }
+/* @media (max-width: 950px) {
+	.books .title .text{
+		font-size: 2rem;
+		width: 30%;
+	}
+}*/
+@media (max-width: 635px) {
+	.books .title .text{
+		font-size: 2rem;
+		width: 300px;
+	}
+	label span {
+		display: none;
+	}
+	.title .text{
+		font-size: 2rem;
+		width: 300px;
+	}
+} 
