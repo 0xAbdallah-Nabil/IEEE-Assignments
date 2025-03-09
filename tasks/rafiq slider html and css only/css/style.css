@@ -134,55 +134,79 @@ label span {
 	0%{	opacity:.4;}
 	100%{opacity:1;}
 }		
-
-/* .yt{
-	margin: 0 auto;
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+.books{
+	height: 70vh;
 	margin-top: 50px;
-	position: relative;
-	width: 150px;
-	height:50px;
-	border: outset #2c2c2c 4px;
-	border-radius: 10px;
+	margin-bottom: 500px;
+}
+.swiper {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.swiper-slide {
 	text-align: center;
-	font-size: 30pt;
-	transition: .5s;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 276.8px !important;
 }
 
-.yt a{
-	text-decoration: none;
-	color: #4c4c4c;
-	transition: .5s;
+.swiper-wrapper img {
+	display: block;
+	width: 100%;
 }
 
-.yt:hover{
-	background: #4c4c4c;
-	transition: .3s;
+.btn{
+	width: 100%;
+	padding: 5px;
+	border: none;
+	background-color: #d29e5b8b;
+	color: white;
+	cursor: pointer;
+	font-size: 1rem;
 }
-
-.yt:hover a{
-	color: #fff;
-	transition: .3s;
+.btn:focus,
+.btn:hover{
+	background-color: #d29e5b;
 }
- */
-/* @media screen and (max-width: 685px){
-	.container{
-		border: none;
-		width: 100%;
-		height: 0;
-		padding-bottom: 55%; 
-	}	
-	
-	label span { font-size: 50pt; }
-	
-	.prev, .next{
-		width: 15%;
-	}	
-	#nav_slide .dots{
-		width: 12px;
-		height: 12px;
-	}
+.swiper-pagination span{
+	background-color: #d29e5b;
+	border: 1px solid black;
 }
-@media screen  and(min-width: 970px){
-	.me{ display: none;}
+.books .title{
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	background-color: white;
+	color: black;
+	position: relative;
 }
- */
+.books .title .text{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    margin: 0px 10px ;
+	color: black;
+	position: absolute;
+	right: 0px;
+}
+.books .title span{
+    width: 80%;
+    height: 5px;
+    background-color: rgb(255, 162, 0);
+    display: block;
+    margin-left: 10px;
+}
