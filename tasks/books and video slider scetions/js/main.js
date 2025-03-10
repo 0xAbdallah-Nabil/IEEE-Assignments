@@ -1,14 +1,21 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6,
     spaceBetween: 30,
     autoplay: {
-        delay: 2000, 
-        disableOnInteraction: true, 
+        delay: 2000,
+        disableOnInteraction: true,
     },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    breakpoints: {
+        320: { slidesPerView: 2 }, // Small screens (phones)
+        480: { slidesPerView: 4 }, // Slightly larger phones
+        768: { slidesPerView: 5 }, // Tablets
+        1024: { slidesPerView: 6 }, // Small laptops
+        1280: { slidesPerView: 7 }, // Large screens
+        1440: { slidesPerView: 8 }  // Full-size desktops
+    }
 });
 
 

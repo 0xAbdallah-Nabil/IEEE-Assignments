@@ -6,34 +6,40 @@
     <title>rafiq css and html only</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
 </head>
 <body >
-    <section style="background-color: black;">
-        <div class="title" style="width: 90%; margin: 0px auto;">
-            <span></span>
+    <!-- start slider section -->
+    <section class="video-slider">
+        <div class="title">
             <p class="text">المرئيات</p>
         </div>
-        <div class="container" style="width: 90%; margin: 0px auto;">
+        <div class="container" >
             <input type="radio" id="i1" name="images" checked />
             <input type="radio" id="i2" name="images" />
             <input type="radio" id="i3" name="images" />  
                 
             <div class="slide_img" id="one">			
                 <iframe class="player slider" src="https://www.youtube.com/embed/HWEu4RhaNIg?si=s5adc4TAgH64lhuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <label class="prev" for="i3"><span>&#x2039;</span></label>
-                <label class="next" for="i2"><span>&#x203a;</span></label>	 -->
+                <label class="prev" for="i3"><i class="fa-solid fa-arrow-left"></i></label>
+                <label class="next" for="i2"><i class="fa-solid fa-arrow-right"></i></label>	
             </div>
             
             <div class="slide_img" id="two">
                 <iframe class="player slider" src="https://www.youtube.com/embed/-zMW2Rqjwcc?si=dUFsOrVDi3BkvHF6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <label class="prev" for="i1"><span>&#x2039;</span></label>
-                <label class="next" for="i3"><span>&#x203a;</span></label> -->
+                <label class="prev" for="i1"><i class="fa-solid fa-arrow-left"></i></label>
+                <label class="next" for="i3"><i class="fa-solid fa-arrow-right"></i></label>
             </div>
                     
             <div class="slide_img" id="three">
                 <iframe class="player slider" src="https://www.youtube.com/embed/COogWP0kKCc?si=dh-1ZTNVZLIR8xrn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <label class="prev" for="i2"><span>&#x2039;</span></label>
-                <label class="next" for="i1"><span>&#x203a;</span></label> -->
+                <label class="prev" for="i2"><i class="fa-solid fa-arrow-left"></i></label>
+                <label class="next" for="i1"><i class="fa-solid fa-arrow-right"></i></label>
             </div>
         
             <div id="nav_slide">
@@ -44,19 +50,21 @@
                 
         </div>
     </section>
-    <section class="books" style="background-color: white;">
-        <div class="title">
-            <span></span>
+    <!-- end video slider section -->
+    <!-- start books section -->
+    <section class="books">
+        <div class="title ">
+            <button > <a href="books/books.html">عرض المزيد</a></button>
             <p class="text">الكتب المترجمة</p>
         </div>
-        <div class="swiper mySwiper" style="width: 90%; margin: 0px auto; ">
+        <div class="swiper mySwiper" style="width: 90%; ">
             <div class="swiper-wrapper">
                 <!-- slides -->
             </div>
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    
+    <!-- end books section -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
