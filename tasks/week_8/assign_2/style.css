@@ -1,0 +1,16 @@
+img{
+    display: block;
+}
+select,
+input{
+    display: block;
+    margin: 0px auto;
+}
+[type="submit"]{
+    margin-top: 5px;
+    width: 100px;
+    height: 20px;
+    background-color: green;
+    border: 0px;
+    color: white;
+}

@@ -1,72 +1,81 @@
-function getDetails(zName, zAge, zCountry) {
-    function namePattern(zName) {
-        let name = zName.split(" ");
-        let lastLetter = name[1].charAt(0);
-        name.pop();
-        name.push( " "+lastLetter + ".");
-        return name.join("");
-    }
-    function ageWithMessage(zAge) {
-        let arr="Your Age Is ";
-        zAge=zAge.slice(0,2);
-        arr+=zAge;
-        return arr;
-    }
-    function countryTwoLetters(zCountry) {
-        if(zCountry=="Egypt"){
-            return "EG";
-        }else if(zCountry=="Syria"){
-            return "SY";
-        }
-    }
-    function fullDetails() {
-        let arr="Hello ";
-        arr+=namePattern(zName);
-        arr+=" , ";
-        arr+=ageWithMessage(zAge);
-        arr+=" , You Live In ";
-        arr+=countryTwoLetters(zCountry);
-        return arr;
-    }
-    namePattern(zName); // Do Not Edit This
-    return fullDetails(); // Do Not Edit This
+
+let myElement1=document.getElementById("elzero");
+let myElement2=document.querySelector(".element");
+let myElement3=document.querySelector('#elzero');
+let myElement4=document.querySelector('[name="js"]');
+let myElement5=document.querySelectorAll('div');
+let myElement6=document.getElementsByClassName("element");
+let myElement7=document.getElementsByName("js");
+let myElement8=document.getElementsByTagName("div"); //All Divs as list so index 0 is the correct
+let myElement9=document.querySelectorAll(".element"); //All Divs as list
+let myElement10=document.querySelectorAll('#elzero'); //All Divs as list
+let myElement11=document.querySelectorAll('[name="js"]'); //All Divs as list
+let myElement12=document.querySelectorAll('div'); //All Divs as list
+let myElement13=document.body.firstElementChild; 
+let myElement14=document.body.children[0];
+console.log(myElement11);
+
+/******************************************************************** */
+let Elements=document.querySelectorAll('img');
+
+for (let i = 0; i < 10; i++) {
+    if(i ==1)Elements[i].src='https://elzero.org/wp-content/themes/elzero/imgs/logo.png';
+    Elements[i].alt="Elzero Logo";
 }
-    console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
-  // Hello Osama M., Your Age Is 38, You Live In EG
-    console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
-  // Hello Ahmed A., Your Age Is 32, You Live In SY
+/******************************************************************** */
+let input=document.querySelector('input');
+let result=document.querySelector('.result');
+input.onclick=function(event){
+    if(input.value ==='' || input.value < 0){
+        input.style.border="1px solid red";
+        event.preventDefault();
+    }
+    else{
+        input.style.border="1px solid green";
+        result.textContent=`{${input.value}} USD Dollar = {${(input.value * 15.6).toFixed(2)}} Egyptian Pound`;
+        
+    }
 
-
-/**********************************************************************************  */
-let itsMe=() =>`Iam A Normal Function`;
-console.log(itsMe()); // Iam A Normal Function
-
-/**********************************************************************************  */
-let urlCreate=(protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
-console.log(urlCreate("https", "elzero", "org"));
-
-
-/**********************************************************************************  */
-
-let checker=(zName) => (status)=> (salary) =>status === "Available" ? `${zName}, My Salary Is ${salary}` : `Iam Not Avaialble`;
-console.log(checker("Osama")("Available")(4000)); // Osama, My Salary Is 4000
-console.log(checker("Ahmed")("Not Available")()); // Iam Not Avaialble
-
-/**********************************************************************************  */
-
-function specialMix(...data) {
-    let sum =0;
-    for(let i=0; i<data.length; i++){
-        let n=parseInt(data[i]);
-        if( !isNaN(n) ){
-            sum+=n;
-        }
-    }    
-    return sum || "All Is Strings";
 }
+/******************************************************************** */
+let one=document.querySelector('.one');
+let two=document.querySelector('.two');
+one.setAttribute('title','one');
+two.setAttribute('title','two');
+one.textContent='one';
+two.textContent='two 2';
+/******************************************************************** */
+let task5=document.querySelectorAll('[decoding="async"]');
+array=[...task5].slice(-5);
+console.log(array[0]);
+array.forEach((element) => {
+    if(element.hasAttribute('alt')){
+        element.setAttribute('alt','old');
+    }
+    else {
+        element.setAttribute('alt','Elzero New');
+    }
+});
 
-  console.log(specialMix(10, 20, 30)); // 60
-  console.log(specialMix("10Test", "Testing", "20Cool")); // 30
-  console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
-  console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
-
+/******************************************************************** */
+let last=document.getElementsByTagName('form')[1];
+let numberOfElements=last.children[0];
+let elementsText=last.children[1];    
+let selection=last.children[2];    
+let submit=last.children[3];
+let result2=document.querySelector('.results');
+    submit.onclick=function(event){
+        if(numberOfElements.value !== '' && elementsText.value !== '' ){
+            for (let i = 0; i < numberOfElements.value; i++) {
+                let element=document.createElement(selection.value);
+                element.textContent=elementsText.value;
+                result2.appendChild(element);
+                event.preventDefault();
+            }
+        }
+        else{
+            event.preventDefault();
+        }
+        
+    }
+    
