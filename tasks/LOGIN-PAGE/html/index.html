@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    
+    <title>LOGIN Abdallah Nabil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .bg-img{
+            background-image: url('../img/main-background.jpg');
+            background-repeat: no-repeat;
+        }
+        .bg-black-opacity-50{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .shadow-form{
+            box-shadow: 0px 0px 100px 10px rgba(255, 254, 254, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-cover flex justify-center items-center text-center bg-img">
+        <form action="">
+            <fieldset class="flex flex-col items-center gap-1 rounded-xl p-5 w-96  bg-black-opacity-50 border-white border-1 shadow-form">
+                <legend class="uppercase font-bold  text-2xl text-violet-600">login</legend>
+                <label for="email" class="uppercase text-violet-600  flex justify-center items-center text-center  w-full relative"> 
+                    <i class="fa-solid fa-user absolute left-16"></i>
+                    <span class="">username</span>
+                </label>
+                <input type="email" id="email" placeholder="email" class="focus:bg-violet-400  text-center bg-white text-black   w-full">
+                <label for="password" class="uppercase text-violet-600  flex justify-center items-center text-center  w-full relative">
+                    <i class="fa-solid fa-lock absolute left-16"></i>
+                    <span>password</span>
+                </label>
+                <input type="password" id="password" placeholder="password" class=" focus:bg-violet-400 text-center bg-white text-black  w-full" >
+                <button type="submit" class="mt-5 bg-white text-black rounded-xs p-0.5 px-5 hover:bg-violet-500 transition-all transition- uppercase w-full">login</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
