@@ -1,0 +1,143 @@
+<!-- the doctype is the declaration of the document type of the page for HTML5 -->
+<!DOCTYPE html>
+<!-- this is the root of the DOM tree -->
+<html lang="en">
+<!-- the head is the container for all the metadata of the page like title, description, keywords -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/android-chrome-192x192.png" type="image/x-icon">
+    <!-- for SEO "search engine oprtimization"-->
+    <meta name="author" content="developed by Abdallah Nabil">
+    <meta name="description" content="testing website">
+    <meta name="keywords" content=" HTML CSS Javascript ">
+    <title>Abdallah Nabil Protofolio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+</head>
+<!-- the body is the container for all the content of the page like text, images, links, etc -->
+<body>
+    <header >
+        <div class="container header">
+            <div class="header-title">
+                <h2><span>A</span>
+                    <span>b</span>
+                    <span>d</span>
+                    <span>a</span>
+                    <span>l</span>
+                    <span>l</span>
+                    <span>a</span>
+                    <span>h</span>
+                    <span> </span>
+                    <span>N</span>
+                    <span>a</span>
+                    <span>b</span>
+                    <span>i</span>
+                    <span>l</span>
+                </h2>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </label> 
+            <ul class="nav">
+                <li><a href="">About</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Licenses</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main >
+        <section class="container About">
+            <img src="img/Abdallah.png" alt="">
+            <div class="about-text content">
+                <h2>About <span class="comma">,</span></h2>
+                <p>Hi, I'm Abdallah Nabil,a Computer Science Engineer with a deep passion for full-stack development, focusing on building scalable and efficient applications using Angular, Express, Mongo DB and modern web technologies,
+                    and eager to apply my academic knowledge to real-world projects focused on building fast, user-friendly web apps that solve real client problems and scale with business growth.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container Education">
+                <h2>Education</h2>
+                <div class="education-details content">
+                    <div>
+                        <p>Level 4, Computer and Control Systems Engineering</p>
+                        <p>Grade: Excellent</p>
+                    </div>
+                    <div class="year">
+                        <p>Sep. 2021 – June 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container Skills">
+            <h2>Skills</h2>
+            <ul class="skills-list content " >
+                <li><i class="fa-brands fa-html5"></i>HTML</li>
+                <li><i class="fa-brands fa-css"></i>CSS</li>
+                <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                <li><i class="fa-brands fa-react"></i>React</li>
+                <li><i class="fa-brands fa-node-js"></i>Node.js</li>
+                <li><i class="fa-brands fa-angular"></i>Angular</li>
+                <li><i class="fa-solid fa-database"></i>MongoDB</li>
+                <li><i class="fa-brands fa-express"></i>Express</li>
+                <li><i class="fa-brands fa-git"></i>Git</li>
+                <li><i class="fa-brands fa-figma"></i>Figma</li>
+                <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+                <li><i class="fa-brands fa-tailwindcss"></i>Tailwind CSS</li>
+            </ul>
+        </section>
+        <!-- <section class="container">
+            <h2>Projects</h2>
+            <ul class="content">
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+        </section> -->
+        <section class="container certifications animation">
+            <h2>Certifications</h2>
+            <ul class="content">
+                <li><img class="imageReveal" src="img/WhatsApp Image 2025-07-12 at 21.49.47_2008b142.jpg" alt="Certification 1"></li>
+                <li><img class="imageReveal"src="img/starks.png" alt="Certification 2"></li>
+                <li><img class="imageReveal"src="img/NTI summer trianning.png" alt="Certification 3"></li>
+                <li><img class="imageReveal"src="img/IEEE.jpg" alt="Certification 4"></li>
+                <li><img class="imageReveal"style="height: 100%;" src="img/autonomous MMS trainnung.png" alt=""></li>
+                <li><img class="imageReveal"src="img/mean stack.jpg" alt=""></li>
+                <li><img class="imageReveal"src="img/Head of autonomous .jpg" alt=""></li>
+                <li><img class="imageReveal"src="img/EVER autonomous.png" alt=""></li>
+            </ul>
+        </section>
+        <section class="container projects animation">
+            <h2>Projects</h2>
+            <ul class="content">
+                <li><a href="https://0xabdallah-nabil.github.io/IEEE-Assignments/tasks/week_3/index.html">IO Web Site</a> <span class="year">Sep.2024</span></li>
+                <li><a href="https://0xabdallah-nabil.github.io/IEEE-Assignments/tasks/week_4/index.html">Kasper Web Site</a> <span class="year">Oct.2024</span></li>
+                <li><a href="https://0xabdallah-nabil.github.io/IEEE-Assignments/tasks/To-Do-List/index.html">Todo List</a> <span class="year">Sep.2025</span></li>
+                <li><a href="https://0xabdallah-nabil.github.io/IEEE-Assignments/tasks/X-O%20Game/index.html">X-O game</a> <span class="year">Nov.2025</span></li>
+            </ul>
+        </section>
+        <section class="container contact">
+            <h2>Contact</h2>
+            <ul class="content">
+                <li> <i class="fa-solid fa-envelope"></i>Email: abdallahnabil2003@gmail.com</li>
+                <li> <i class="fa-solid fa-phone"></i>Phone: 01061441191</li>
+                <li> <i class="fa-solid fa-location-dot"></i>Mansoura, Dakahlia, Egypt</li>
+                <li> <i class="fa-brands fa-linkedin"></i><a href="">LinkedIn</a></li>
+                <li> <i class="fa-brands fa-github"></i><a href="">GitHub</a></li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer >
+        <div class="container footer">
+            <p>&copy; 2025 Abdallah Nabil. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
